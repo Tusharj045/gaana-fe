@@ -27,7 +27,7 @@ const PortsTable = () => {
     const fetchPortsData = async () => {
       try {
         const response = await axios.get(
-          "https://raw.githubusercontent.com/marchah/sea-ports/refs/heads/master/lib/ports.json"
+          "http://localhost:3000/ports"
         );
         setPortsData(Object.values(response.data));
       } catch (error) {
